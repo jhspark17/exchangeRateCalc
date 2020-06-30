@@ -13,7 +13,7 @@
   <div>Choose the currency and the amounts to get the exchange rate</div>
   <div class="container">
   <div class="currency">
-    <select name="currency-one" id="currency-one">
+    <select id="currency-one">
       <option value="AED">AED</option>
       <option value="ARS">ARS</option>
       <option value="AUD">AUD</option>
@@ -71,10 +71,10 @@
   </div>
   <div class="button-container">
     <button id="swap" class='btn'>Swap</button>
-   
+    <span id="exchange"></span>
   </div>
   <div class="currency">
-    <select name="currency-two" id="currency-two">
+    <select id="currency-two">
       <option value="AED">AED</option>
       <option value="ARS">ARS</option>
       <option value="AUD">AUD</option>
@@ -128,8 +128,9 @@
       <option value="VND">VND</option>
       <option value="ZAR">ZAR</option>
     </select>
-    <input type="number" id="from" placeholder="0"/>
+    <input type="number" id="amount-two" placeholder="0" value="1"/>
   </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
