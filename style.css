@@ -43,3 +43,12 @@ h1{
   font-size: 30px;
   text-align: right;
 }
+
+.button-container .btn{
+  color: #fff;
+  size: 40px;
+  background-color: var(--text-color);
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
