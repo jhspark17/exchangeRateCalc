@@ -52,3 +52,19 @@ h1{
   padding: 5px 12px;
   border-radius: 5px;
 }
+
+select:focus, input:focus{
+  outline: 0;
+}
+
+
+.button-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.exchange{
+  padding-top: 5px;
+  color: var(--text-color);
+  font-size: 18px;
+}
