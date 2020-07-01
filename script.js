@@ -9,7 +9,7 @@ function getExchange() {
   fetch(`https://api.exchangerate-api.com/v4/latest/${currencyOne.value}`)
   .then(res => res.json())
   .then(data => {
-    exchange.innerHTML = `${data.rates[currencyOne.value]} ${currencyOne.value}    =    ${data.rates[currencyTwo.value]} ${currencyTwo.value}`;
+    exchange.innerHTML = `${data.rates[currencyOne.value]} ${currencyOne.value} = ${data.rates[currencyTwo.value]} ${currencyTwo.value}`;
     amountTwo.value = amountOne.value * data.rates[currencyTwo.value]
   })
 }
@@ -26,6 +26,6 @@ currencyOne.addEventListener("change", getExchange);
 currencyTwo.addEventListener("change", getExchange);
 amountOne.addEventListener("input", getExchange);
 swap.addEventListener('click', swapValues)
-
+getExchange();
 
 
